@@ -1,4 +1,4 @@
- //выводит структуру вложенности тегов body 
+ //выводит структуру узлов body 
 
 (function nodes(value, step = 0) {
   for (let elem of [...value.children]) { 
@@ -10,3 +10,4 @@
   console.groupEnd();
 })(document.body)
 
+https://github.com/Balaon/recursion/blob/master/nodes.js
