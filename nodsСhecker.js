@@ -1,16 +1,12 @@
- //выводит структуру вложенности тегов body в консоль
+ //выводит структуру вложенности тегов body 
 
 (function nodsСhecker(value, step = 0) {
-  let count = step;
-    
-  for (let elem of [...value.children]) {
+  for (let elem of [...value.children]) { 
     console.group(elem.tagName);
-        
-    if (elem.querySelector('*') === null) { console.groupEnd(); continue;}
     
-     nodsСhecker(elem,  count++); 
+   (elem.querySelector('*') !== null) ? nodsСhecker(elem,  step++) : console.groupEnd(); 
   }
-    
+  
   console.groupEnd();
 })(document.body)
 
