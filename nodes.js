@@ -9,5 +9,3 @@
   
   console.groupEnd();
 })(document.body)
-
-https://github.com/Balaon/recursion/blob/master/nodes.js
